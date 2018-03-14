@@ -1,2 +1,2 @@
 # CES22
-CES22 - ITA implementations
+Assignments from ITA's OOP course (2018).
