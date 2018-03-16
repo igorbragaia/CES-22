@@ -24,7 +24,8 @@ def has_dashdash(string):
 
 
 def extract_words(string):
-    return [word.lower() for word in "".join([x if (x >='a' and x <= 'z') or (x >= 'A' and x <= 'Z') else ' ' for x in string]).split(' ') if word != '']
+    return [word.lower() for word in "".join([x if (x >='a' and x <= 'z') or (
+            x >= 'A' and x <= 'Z') else ' ' for x in string]).split(' ') if word != '']
 
 
 def wordcount(string, lista):
