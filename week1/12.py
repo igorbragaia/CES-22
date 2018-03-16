@@ -1,5 +1,4 @@
 import turtle
-import math
 
 
 wn = turtle.Screen()
@@ -24,6 +23,5 @@ def draw(shape, R, show_begining=False):
 
 draw("turtle", 120, show_begining=True)
 draw("arrow", 90)
-
 
 wn.mainloop()
