@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d2ac409-3477-4e1f-bb4e-63580ded1e31" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/week3/10.6.2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week3/12.11.8.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week3/13.11.1.input.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week3/13.11.1.output.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week3/13.11.1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week3/14.11.1.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2d2ac409-3477-4e1f-bb4e-63580ded1e31" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
