@@ -20,6 +20,7 @@ yano.pensize(5)
 
 
 R = 100
+# building the only possible case, the last one, without writing same edges more than once
 movements = [
     (90, 100), (-45, 50 * math.sqrt(2)), (-90, 50 * math.sqrt(2)), (-135, 100),
     (135, 100 * math.sqrt(2)), (135, 100), (135, 100 * math.sqrt(2)), (135, 100)
