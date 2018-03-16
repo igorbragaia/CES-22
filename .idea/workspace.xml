@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d2ac409-3477-4e1f-bb4e-63580ded1e31" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/week2/11.22.5.py" afterPath="$PROJECT_DIR$/week2/11.22.5.py" />
-      <change beforePath="$PROJECT_DIR$/week2/11.22.6.py" afterPath="$PROJECT_DIR$/week2/11.22.6.py" />
-      <change beforePath="$PROJECT_DIR$/week2/6.9.16.py" afterPath="$PROJECT_DIR$/week2/6.9.16.py" />
-      <change beforePath="$PROJECT_DIR$/week2/6.9.17.py" afterPath="$PROJECT_DIR$/week2/6.9.17.py" />
-      <change beforePath="$PROJECT_DIR$/week2/8.19.10.py" afterPath="$PROJECT_DIR$/week2/8.19.10.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week3/10.6.2.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week3/12.11.8.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week3/13.11.1.input.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week3/13.11.1.output.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week3/13.11.1.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week3/14.11.1.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +18,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="14.11.1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week3/14.11.1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +50,12 @@
         <option value="$PROJECT_DIR$/week2/8.19.10.py" />
         <option value="$PROJECT_DIR$/week2/6.9.17.py" />
         <option value="$PROJECT_DIR$/week2/6.9.16.py" />
+        <option value="$PROJECT_DIR$/week3/10.6.2.py" />
+        <option value="$PROJECT_DIR$/week3/12.11.8.py" />
+        <option value="$PROJECT_DIR$/week3/13.11.1.txt" />
+        <option value="$PROJECT_DIR$/week3/13.11.1.py" />
+        <option value="$PROJECT_DIR$/week3/13.11.1.input..txt" />
+        <option value="$PROJECT_DIR$/week3/13.11.1.input.txt" />
       </list>
     </option>
   </component>
@@ -76,7 +95,7 @@
             <path>
               <item name="CES22" type="b2602c69:ProjectViewProjectNode" />
               <item name="CES22" type="462c0819:PsiDirectoryNode" />
-              <item name="week1" type="462c0819:PsiDirectoryNode" />
+              <item name="week3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -100,7 +119,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.11.22.6">
+  <component name="RunManager" selected="Python.13.11.1">
+    <configuration name="10.6.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CES22" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week3/10.6.2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="11.22.6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,55 +156,37 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="6.9.17" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="12.11.8" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CES22" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week2/6.9.17.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week3/12.11.8.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="7.26.12" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="13.11.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CES22" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week2/7.26.12.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="7.26.13" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CES22" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week2/7.26.13.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week3/13.11.1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,19 +211,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.6.9.17" />
-      <item index="1" class="java.lang.String" itemvalue="Python.7.26.12" />
-      <item index="2" class="java.lang.String" itemvalue="Python.7.26.13" />
-      <item index="3" class="java.lang.String" itemvalue="Python.8.19.10" />
-      <item index="4" class="java.lang.String" itemvalue="Python.11.22.6" />
+      <item index="0" class="java.lang.String" itemvalue="Python.8.19.10" />
+      <item index="1" class="java.lang.String" itemvalue="Python.11.22.6" />
+      <item index="2" class="java.lang.String" itemvalue="Python.10.6.2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.12.11.8" />
+      <item index="4" class="java.lang.String" itemvalue="Python.13.11.1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.11.22.6" />
-        <item index="1" class="java.lang.String" itemvalue="Python.8.19.10" />
-        <item index="2" class="java.lang.String" itemvalue="Python.7.26.13" />
-        <item index="3" class="java.lang.String" itemvalue="Python.7.26.12" />
-        <item index="4" class="java.lang.String" itemvalue="Python.6.9.17" />
+        <item index="0" class="java.lang.String" itemvalue="Python.13.11.1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.12.11.8" />
+        <item index="2" class="java.lang.String" itemvalue="Python.10.6.2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.11.22.6" />
+        <item index="4" class="java.lang.String" itemvalue="Python.8.19.10" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +245,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="301" y="-35" width="1366" height="732" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -236,19 +256,19 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122727275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122727275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4061962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48364887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -292,49 +312,67 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>test(wordset([&quot;now&quot;, &quot;is&quot;, &quot;time&quot;, &quot;is&quot;, &quot;now&quot;, &quot;is&quot;, &quot;is&quot;]) ==
+         [&quot;is&quot;, &quot;now&quot;, &quot;time&quot;])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>scalar * lista</expression-string>
+        <expression-string>sorted(set([&quot;now&quot;, &quot;is&quot;, &quot;time&quot;, &quot;is&quot;, &quot;now&quot;, &quot;is&quot;, &quot;is&quot;]))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;&quot;.join(reversed(string))</expression-string>
+        <expression-string>set([&quot;now&quot;, &quot;is&quot;, &quot;time&quot;, &quot;is&quot;, &quot;now&quot;, &quot;is&quot;, &quot;is&quot;])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(reversed(string))</expression-string>
+        <expression-string>[&quot;now&quot;, &quot;is&quot;, &quot;time&quot;, &quot;is&quot;, &quot;now&quot;, &quot;is&quot;, &quot;is&quot;]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>reversed(string)</expression-string>
+        <expression-string>extract_words(&quot;Now is the time!  'Now', is the time? Yes, now.&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(reversed(string))</expression-string>
+        <expression-string>[word for word in &quot;&quot;.join([x if (x &gt;='a' and x &lt;= 'z') or (x &gt;= 'A' and x &lt;= 'Z') else ' ' for x in string]).split(' ') if word != '']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>string</expression-string>
+        <expression-string>[word for word in &quot;&quot;.join([x if (x &gt;='a' and x &lt;= 'z') or (x &gt;= 'A' and x &lt;= 'Z') else ' ' for x in string]).split(' ') if x != '']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>string == reversed(string)</expression-string>
+        <expression-string>[word for word in &quot;&quot;.join([x if (x &gt;='a' and x &lt;= 'z') or (x &gt;= 'A' and x &lt;= 'Z') else ' ' for x in string]).split(' ')]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>sys._getframe(1).f_lineno</expression-string>
+        <expression-string>[word for word in &quot;&quot;.join([x if (x &gt;='a' and x &lt;= 'z') or (x &gt;= 'A' and x &lt;= 'Z') else ' ' for x in string]).split(' ') if word != ' ']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;&quot;.join([x if (x &gt;='a' and x &lt;= 'z') or (x &gt;= 'A' and x &lt;= 'Z') else ' ' for x in string]).split(' ')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;&quot;.join([x if (x &gt;='a' and x &lt;= 'z') or (x &gt;= 'A' and x &lt;= 'Z') else ' ' for x in string])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -381,14 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.5/turtle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-566">
-          <caret line="1221" column="8" lean-forward="false" selection-start-line="1221" selection-start-column="8" selection-end-line="1221" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week2/11.22.6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -401,14 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week2/8.19.10.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -441,14 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week2/6.9.17.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week2/6.9.16.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -461,14 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week2/4.9.9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -496,6 +502,86 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/6.9.17.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/4.9.9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/turtle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="3309" column="8" lean-forward="false" selection-start-line="3309" selection-start-column="8" selection-end-line="3309" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/10.6.2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week2/8.19.10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/13.11.1.input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/13.11.1.output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/13.11.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/12.11.8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/14.11.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
