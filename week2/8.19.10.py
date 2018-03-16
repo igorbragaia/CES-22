@@ -4,7 +4,7 @@ import sys
 def test(did_pass):
     """
     Prints test result
-    :param passou: test result
+    :param did_pass: test result
     :return:
     """
     linenum = sys._getframe(1).f_lineno   # Get the caller's line number.
