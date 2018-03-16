@@ -10,19 +10,16 @@ yano = turtle.Turtle()
 yano.shape("turtle")
 
 # centering yano
+yano.penup()
 yano.hideturtle()
 yano.left(90)
 yano.forward(150)
 yano.left(-90)
-
-yano.clear()
-yano.showturtle()
-
 yano.left(-90)
 yano.right(18)
-yano.showturtle()
+yano.pendown()
 
-while True:
+for i in range(5):
     yano.forward(2 * R * math.cos(math.pi / 10))
     yano.left(180 - 36)
 
