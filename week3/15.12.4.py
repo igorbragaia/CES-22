@@ -24,6 +24,11 @@ class Point:
         self.y = y
 
     def get_line_to(self, point):
+        """
+        Gets m,c coefficients of line y = m * x + c defined by point and self
+        :param point: Point
+        :return: m, c
+        """
         if point.x == self.x and point.y == self.y:
             raise Exception("Same two points do not define a line")
 

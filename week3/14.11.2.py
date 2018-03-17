@@ -72,6 +72,11 @@ test(not has_clashes([2,0,3,1]))         # Solution to 4x4 case
 
 
 def main(n):
+    """
+    Finds queen distribution solution 10 different times
+    :param n: chess grid size (n x n)
+    :return:
+    """
     import random
     rng = random.Random()   # Instantiate a generator
 

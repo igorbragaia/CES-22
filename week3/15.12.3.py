@@ -24,6 +24,10 @@ class Point:
         self.y = y
 
     def slope_from_origin(self):
+        """
+        Gets the slope of line defined from point to origin
+        :return:
+        """
         if self.x == 0 and self.y == 0:
             raise Exception("(0,0) does not define a line from origin")
         return self.y / self.x
