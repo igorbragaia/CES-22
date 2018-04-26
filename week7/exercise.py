@@ -37,7 +37,6 @@ def consumer(box, items):
         for item in item_gen:
             print("removing item {0} in the box\n".format(item))
         time.sleep(5)
-        items -= 1
 
 
 if __name__ == '__main__':
