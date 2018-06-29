@@ -11,10 +11,11 @@ def email_log(email):
 
 @email_log("igorbragaia@gmail.com")
 def no_errors_method(str):
+    print(x)
     return str
 
 
-@email_log("igorbragaia@gmail.com")
+@email_log("igor_bragaia@gmail.com")
 def errors_method(str):
     print(x)
     return str
