@@ -56,7 +56,7 @@ def login():
 def logout():
     logout_user()
     flash('usuario deslogado')
-    return redirect(url_for('index'))
+    return redirect(url_for('choose'))
 
 
 # handle login failed

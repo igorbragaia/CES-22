@@ -1,5 +1,6 @@
-# EXERCÍCIOS DO YANO
-
+# CES22 2º BIMESTRE
+### *disciplina do ITA de programação orientada a objetos em Python :snake: :snake:*
+**Professor [ Edgar Toshiro Yano](http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4798593T1&idiomaExibicao=2)** 
 ## Aula 10
 
 Desenvolver um servidor de chat para multiplos usuários.
