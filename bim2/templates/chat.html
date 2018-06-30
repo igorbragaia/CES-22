@@ -1,0 +1,15 @@
+<form action="/" method="get">
+    <input class="btn-lg" type=submit value=HOME>
+</form>
+
+
+<div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4, col-xl-4">
+        <p><b>olá, {{ usuario }}</b></p>
+    </div>
+    <div class="col-sm-8 col-md-8 col-lg-8, col-xl-8">
+        <form action="/logout" method="post">
+            <input class="btn-lg" type=submit value=sair>
+        </form>
+    </div>
+</div>

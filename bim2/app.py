@@ -73,10 +73,15 @@ def load_user(userid):
 
 
 @app.route('/')
+def choose():
+    return render_template('index.html')
+
+
+@app.route('/admin')
 @login_required
 def index():
     imagens = [x.imagelink for x in FileContent.query.filter_by(name=current_user.name).all()]
-    return render_template('index.html', usuario=current_user.name, imagens=imagens)
+    return render_template('admin.html', usuario=current_user.name, imagens=imagens)
 
 
 @app.route('/set_cookie', methods=["POST"])

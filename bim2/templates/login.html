@@ -25,9 +25,10 @@
 </head>
 
 <body>
-    <br>
+    <form action="/" method="get">
+        <input class="btn-lg" type=submit value=HOME>
+    </form>
     <div class="container" style="text-align: center">
-    <br>
         {% with messages = get_flashed_messages(with_categories=true) %}
           <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
           {% if messages %}
