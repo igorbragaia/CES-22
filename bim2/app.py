@@ -11,6 +11,7 @@ import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ybdeuretdcfdxc:74dadeebb8551d20d2dc42e3dbf684367f04fdf107810aa7a2f6c64dab37c30c@ec2-54-227-247-225.compute-1.amazonaws.com:5432/d7vqivmcke4e0f'
 db = SQLAlchemy(app)
 socketio = SocketIO(app)
 
@@ -88,7 +89,7 @@ def cookie_insertion():
     name = request.form['name']
     value = request.form['value']
 
-    redirect_to_index = redirect('/')
+    redirect_to_index = redirect('admin')
     response = app.make_response(redirect_to_index )
     response.set_cookie(name, value=value)
     return response
@@ -132,7 +133,7 @@ def upload():
         flash('Imagem salva com sucesso!')
     except Exception as e:
         flash('ocorreu o seguinte erro: ', e)
-    return redirect(url_for('index'))
+    return redirect(url_for('admin'))
 
 
 @app.route('/chat')

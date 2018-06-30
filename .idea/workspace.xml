@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d2ac409-3477-4e1f-bb4e-63580ded1e31" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/CES22.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bim2/Procfile" afterPath="$PROJECT_DIR$/bim2/Procfile" />
+      <change beforePath="$PROJECT_DIR$/.gitgnore" afterPath="$PROJECT_DIR$/.gitgnore" />
+      <change beforePath="$PROJECT_DIR$/.idea/CES22.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/bim2/app.py" afterPath="$PROJECT_DIR$/bim2/app.py" />
-      <change beforePath="$PROJECT_DIR$/bim2/requirements.txt" afterPath="$PROJECT_DIR$/bim2/requirements.txt" />
       <change beforePath="$PROJECT_DIR$/bim2/templates/admin.html" afterPath="$PROJECT_DIR$/bim2/templates/admin.html" />
-      <change beforePath="$PROJECT_DIR$/bim2/templates/chat.html" afterPath="$PROJECT_DIR$/bim2/templates/chat.html" />
-      <change beforePath="$PROJECT_DIR$/bim2/templates/index.html" afterPath="$PROJECT_DIR$/bim2/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitgnore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitgnore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bim2/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="80">
+              <caret line="129" column="29" lean-forward="false" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="29" />
               <folding>
                 <element signature="e#24#68#0" expanded="true" />
               </folding>
@@ -47,8 +57,8 @@
       <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bim2/templates/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="40" selection-end-column="15" />
+            <state relative-caret-position="294">
+              <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -79,6 +89,8 @@
       <find>login</find>
       <find>def login</find>
       <find>index</find>
+      <find>save</find>
+      <find>cookies</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,13 +143,13 @@
         <option value="$PROJECT_DIR$/bim2/README.md" />
         <option value="$PROJECT_DIR$/bim1/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitgnore" />
         <option value="$PROJECT_DIR$/bim2/Procfile" />
         <option value="$PROJECT_DIR$/bim2/requirements.txt" />
         <option value="$PROJECT_DIR$/bim2/templates/chat.html" />
-        <option value="$PROJECT_DIR$/bim2/templates/admin.html" />
         <option value="$PROJECT_DIR$/bim2/templates/index.html" />
+        <option value="$PROJECT_DIR$/bim2/templates/admin.html" />
         <option value="$PROJECT_DIR$/bim2/app.py" />
+        <option value="$PROJECT_DIR$/.gitgnore" />
       </list>
     </option>
   </component>
@@ -171,17 +183,6 @@
             <path>
               <item name="CES22" type="b2602c69:ProjectViewProjectNode" />
               <item name="CES22" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CES22" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CES22" type="462c0819:PsiDirectoryNode" />
-              <item name="bim2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CES22" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CES22" type="462c0819:PsiDirectoryNode" />
-              <item name="bim2" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -659,14 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitgnore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bim2/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
@@ -699,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bim2/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="40" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bim2/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -715,13 +700,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bim2/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bim2/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="80">
+          <caret line="129" column="29" lean-forward="false" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="29" />
           <folding>
             <element signature="e#24#68#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitgnore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
