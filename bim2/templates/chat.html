@@ -1,15 +1,79 @@
-<form action="/" method="get">
-    <input class="btn-lg" type=submit value=HOME>
-</form>
+<head>
+    <title>CES22</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<div class="row">
-    <div class="col-sm-4 col-md-4 col-lg-4, col-xl-4">
-        <p><b>olá, {{ usuario }}</b></p>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- MaterializeCSS-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+    <br>
+    <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+            <form action="/" method="get">
+                <input class="btn-lg" type=submit value=HOME>
+            </form>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+            <form action="/logout" method="post">
+                <input class="btn-lg" type=submit value=logout>
+            </form>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+            <p><b>olá, {{ usuario }}</b></p>
+        </div>
     </div>
-    <div class="col-sm-8 col-md-8 col-lg-8, col-xl-8">
-        <form action="/logout" method="post">
-            <input class="btn-lg" type=submit value=sair>
-        </form>
+
+	<div class="container">
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }} alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">X</span></button>
+              <!-- <strong>Title</strong> --> {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var socket = io.connect(window.location.origin+'/chat');
+            socket.on('connect', function() {
+                socket.send('Estou online!');
+            });
+            socket.on('message', function(msg) {
+                $("#mensagens").append('<li><b>'+msg.user + ':</b> '+msg.msg+'</li>');
+                console.log('Received message');
+            });
+            $('#sendbutton').on('click', function() {
+                socket.send($('#mensagem').val());
+            });
+        });
+    </script>
+    <ul id="mensagens"></ul>
+    <input type="text" id="mensagem">
+    <input id="sendbutton"class="btn-lg" type=submit value=Enviar>
     </div>
-</div>
+    <br><br><br>
+</body>
+

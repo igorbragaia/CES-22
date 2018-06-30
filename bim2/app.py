@@ -3,14 +3,16 @@ from flask import render_template, send_file
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, Response, redirect, request, abort, url_for, flash
 from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
+from flask_socketio import SocketIO, send, emit
 import boto3
 import uuid
 import os
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ybdeuretdcfdxc:74dadeebb8551d20d2dc42e3dbf684367f04fdf107810aa7a2f6c64dab37c30c@ec2-54-227-247-225.compute-1.amazonaws.com:5432/d7vqivmcke4e0f'
 db = SQLAlchemy(app)
+socketio = SocketIO(app)
 
 
 app.config.update(
@@ -19,13 +21,11 @@ app.config.update(
 )
 
 
-# flask-login
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "login"
 
 
-# silly user model
 class User(UserMixin):
     def __init__(self, id):
         self.id = id
@@ -33,7 +33,6 @@ class User(UserMixin):
         self.password = id
 
 
-# somewhere to login
 @app.route("/login", methods=["GET", "POST"])
 def login():
 	if request.method == 'POST':
@@ -43,43 +42,43 @@ def login():
 			id = username
 			user = User(id)
 			login_user(user)
-			return redirect(url_for('index'))
+			return redirect(request.args.get("next") or url_for("index"))
 		else:
 			return abort(401)
 	else:
 		return Response(render_template('login.html'))
 
 
-# somewhere to logout
-@app.route("/logout", methods=["GET","POST"])
+@app.route("/logout", methods=["GET", "POST"])
 @login_required
 def logout():
     logout_user()
     flash('usuario deslogado')
-    return redirect(url_for('choose'))
+    return redirect(url_for('index'))
 
 
-# handle login failed
 @app.errorhandler(401)
 def page_not_found(e):
     flash('usuario ou senha incorretos')
     return Response(render_template('login.html'))
 
 
-# callback to reload the user object
 @login_manager.user_loader
 def load_user(userid):
     return User(userid)
 
 
 @app.route('/')
-def choose():
-    return render_template('index.html')
+def index():
+    if hasattr(current_user, 'name'):
+        return render_template('index.html', usuario=current_user.name)
+    else:
+        return render_template('index.html', usuario=None)
 
 
 @app.route('/admin')
 @login_required
-def index():
+def admin():
     imagens = [x.imagelink for x in FileContent.query.filter_by(name=current_user.name).all()]
     return render_template('admin.html', usuario=current_user.name, imagens=imagens)
 
@@ -136,6 +135,18 @@ def upload():
     return redirect(url_for('index'))
 
 
+@app.route('/chat')
+@login_required
+def chat():
+    flash('Bem-vido ao chat!')
+    return render_template('chat.html', usuario=current_user.name)
+
+
+@socketio.on('message', namespace='/chat')
+def handleMessage(msg):
+    emit('message', {'user': current_user.name, 'msg': msg}, broadcast=True)
+
+
 def saveImage(file):
     extension = os.path.splitext(file.filename)[1]
     if extension == '':
@@ -176,4 +187,4 @@ class Usuario(db.Model):
 
 
 if __name__ == '__main__':
-    app.run()
+    socketio.run(app)

@@ -21,7 +21,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </head>
 <body>
-
+    {% if usuario != None %}
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+                <form action="/logout" method="post">
+                    <input class="btn-lg" type=submit value=logout>
+                </form>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+                <p><b>olá, {{ usuario }}</b></p>
+            </div>
+        </div>
+    {% endif %}
 	<div class="container">
         <br><br>
         <form action="/chat" method="get">

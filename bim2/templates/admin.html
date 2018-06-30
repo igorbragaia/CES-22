@@ -22,21 +22,23 @@
 </head>
 <body>
     <br>
-    <div class="row">
-        <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
-            <form action="/" method="get">
-                <input class="btn-lg" type=submit value=HOME>
-            </form>
+    {% if usuario != None %}
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+                <form action="/" method="get">
+                    <input class="btn-lg" type=submit value=HOME>
+                </form>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+                <form action="/logout" method="post">
+                    <input class="btn-lg" type=submit value=logout>
+                </form>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
+                <p><b>olá, {{ usuario }}</b></p>
+            </div>
         </div>
-        <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
-            <form action="/logout" method="post">
-                <input class="btn-lg" type=submit value=logout>
-            </form>
-        </div>
-        <div class="col-sm-2 col-md-2 col-lg-2, col-xl-2">
-            <p><b>olá, {{ usuario }}</b></p>
-        </div>
-    </div>
+    {% endif %}
 
 	<div class="container">
 
