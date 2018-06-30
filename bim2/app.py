@@ -9,6 +9,7 @@ import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ybdeuretdcfdxc:74dadeebb8551d20d2dc42e3dbf684367f04fdf107810aa7a2f6c64dab37c30c@ec2-54-227-247-225.compute-1.amazonaws.com:5432/d7vqivmcke4e0f'
 db = SQLAlchemy(app)
 
 
@@ -78,23 +79,38 @@ def index():
     return render_template('index.html', usuario=current_user.name, imagens=imagens)
 
 
-@app.route('/cadastrar', methods=["POST"])
+@app.route('/set_cookie', methods=["POST"])
+def cookie_insertion():
+    name = request.form['name']
+    value = request.form['value']
+
+    redirect_to_index = redirect('/')
+    response = app.make_response(redirect_to_index )
+    response.set_cookie(name, value=value)
+    return response
+
+
+@app.route('/cadastrar', methods=["POST","GET"])
 def cadastrar():
-	try:
-		username = request.form['username']
-		password = request.form['password']
+    if request.method == "POST":
+        try:
+            username = request.form['username']
+            password = request.form['password']
 
-		if len(list(Usuario.query.filter_by(username=username))) == 0:
-			new_user = Usuario(username, password)
+            if len(list(Usuario.query.filter_by(username=username))) == 0:
+                new_user = Usuario(username, password)
 
-			db.session.add(new_user)
-			db.session.commit()
-			flash('Usuário registrado no banco de dados!')
-		else:
-			flash('Já existe um usuário com esse nome registrado :(')
-	except Exception as e:
-		flash('ocorreu o seguinte erro: ', e)
-	return redirect(url_for('index'))
+                db.session.add(new_user)
+                db.session.commit()
+                flash('Usuário registrado no banco de dados!')
+                return redirect(url_for('index'))
+            else:
+                flash('Já existe um usuário com esse nome registrado :(')
+                return redirect(url_for('cadastrar'))
+        except Exception as e:
+            flash('ocorreu o seguinte erro: ', e)
+    else:
+        return render_template('cadastrar.html')
 
 
 @app.route('/upload', methods=["POST"])
