@@ -4,7 +4,7 @@
 ## Aula 10
 
 Desenvolver um servidor de chat para multiplos usuários.
-> ces22.herokuapp.com/chat
+> https://ces22.herokuapp.com/chat
 
 ## Aula 12
 
@@ -14,7 +14,7 @@ Desenvolver um servidor de chat para multiplos usuários.
 arquivos em um servidor, listar e acessar arquivos no
 servidor.
 
-> ces22.herokuapp.com/admin
+> https://ces22.herokuapp.com/admin
 
 ## Aula 13
 
