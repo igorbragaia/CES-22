@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-import psycopg2, json
-from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT # <-- ADD THIS LINE
-from flask import render_template, jsonify
+from flask import render_template, send_file
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, Response, redirect, request, abort, url_for, flash
-from flask.ext.login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
+from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
+import boto3
+import uuid
 import os
-
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
@@ -75,7 +74,8 @@ def load_user(userid):
 @app.route('/')
 @login_required
 def index():
-    return render_template('index.html', usuario=current_user.name)
+    imagens = [x.imagelink for x in FileContent.query.filter_by(name=current_user.name).all()]
+    return render_template('index.html', usuario=current_user.name, imagens=imagens)
 
 
 @app.route('/cadastrar', methods=["POST"])
@@ -97,6 +97,47 @@ def cadastrar():
 	return redirect(url_for('index'))
 
 
+@app.route('/upload', methods=["POST"])
+@login_required
+def upload():
+    try:
+        image = request.files['image']
+
+        imagelink = saveImage(image)
+
+        newfile = FileContent(current_user.name, imagelink)
+        db.session.add(newfile)
+        db.session.commit()
+
+        flash('Imagem salva com sucesso!')
+    except Exception as e:
+        flash('ocorreu o seguinte erro: ', e)
+    return redirect(url_for('index'))
+
+
+def saveImage(file):
+    extension = os.path.splitext(file.filename)[1]
+    if extension == '':
+        return None
+
+    filename = "YANO" + str(uuid.uuid4()) + extension
+    s3 = boto3.resource('s3')
+    S3_BUCKET = os.environ.get('S3_BUCKET')
+    s3.Bucket(S3_BUCKET).put_object(Key=filename, Body=file, CacheControl='max-age:2592000')
+    path = 'https://%s.s3.amazonaws.com/%s' % (S3_BUCKET, filename)
+
+    return path
+
+
+class FileContent(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.Unicode(), nullable=False)
+    imagelink = db.Column(db.Unicode(), nullable=False)
+
+    def __init__(self, name, imagelink):
+        self.name = name
+        self.imagelink = imagelink
+
 
 class Usuario(db.Model):
     __tablename__ = 'usuario'
@@ -106,8 +147,8 @@ class Usuario(db.Model):
     password = db.Column(db.String(2000), unique=True, nullable=False)
 
     def __init__(self, username, password):
-    	self.username = username
-    	self.password = password
+        self.username = username
+        self.password = password
 
     def __repr__(self):
         return '<username %r, password %r>' % (self.username, self.password)

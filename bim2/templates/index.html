@@ -21,8 +21,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </head>
 <body>
-	olá, {{ usuario }}
-    <form action="/logout" method="post">
-        <input class="btn-lg" type=submit value=sair>
-    </form>
+	<div class="container">
+            olá, {{ usuario }}
+        <form action="/logout" method="post">
+            <input class="btn-lg" type=submit value=sair>
+        </form>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }} alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">X</span></button>
+              <!-- <strong>Title</strong> --> {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <strong> Imagem</strong><br>
+            <input id="file" type="file" accept="image/*" name="image" />
+            <br><br><input class="btn-lg" type=submit value=upload>
+        </form>
+
+        imagens salvas para o usuário {{ usuario }}<br>
+        {% for image in imagens %}
+            <img src="{{image}}" class="col-sm-3 col-md-3 col-lg-3, col-xl-3">
+        {% endfor %}
+    </div>
 </body>
