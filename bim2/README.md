@@ -20,11 +20,15 @@ servidor.
 
 Identifique no Projeto do Grupo situações onde os
 princípios SOLID poderiam ser (ou foram) aplicados.
+> https://itabits-site.herokuapp.com
+
 
 ## Aula 14
 
-Criar exemplos que ilustrem os padrões Ponte, Decorador
-e Compósito.
+Criar exemplos que ilustrem os padrões: 
+- Ponte
+- Decorador
+- Compósito
 
 ## Aula 15
 
