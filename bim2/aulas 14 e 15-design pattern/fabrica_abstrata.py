@@ -1,7 +1,7 @@
-from abc import ABC, abstractmethod
+from abc import ABCMeta, abstractmethod
 
 
-class Base(ABC):
+class Base(metaclass=ABCMeta):
     def __init__(self):
         self.id = 1
 
@@ -18,4 +18,5 @@ class Exemplo(Base):
         pass
 
 
-Exemplo()
+if __name__ == "__main__":
+    Exemplo()
