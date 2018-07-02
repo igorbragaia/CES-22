@@ -11,7 +11,6 @@ import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ybdeuretdcfdxc:74dadeebb8551d20d2dc42e3dbf684367f04fdf107810aa7a2f6c64dab37c30c@ec2-54-227-247-225.compute-1.amazonaws.com:5432/d7vqivmcke4e0f'
 db = SQLAlchemy(app)
 socketio = SocketIO(app)
 
