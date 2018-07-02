@@ -21,10 +21,11 @@ servidor.
 Identifique no Projeto do Grupo situações onde os
 princípios SOLID poderiam ser (ou foram) aplicados.
 > https://www.itabits.com.br
-- Princípio de Liskov na criação de componentes herdando de React.Component
-- Na Sidebar de tutoriais há Dependency Injection pois esse componente é construído a partir do JSON de metainformação que que tem origem em outro repositório. Esse objeto é injetado na Sidebar, não é ela quem pega.
-- Single Responsability: Toda vez que o desenvolvedor tiver quebrado algo em mais de uma classe você, quebrou apenas ela. Por exemplo, quando foi criada uma classe pra representar uma lista de componentes e uma classe pra representar um item da lista de componentes, caso o componente da lista seja quebrado, a lista de componentes não é influenciada pois cada classe teve um design com o objetivo de cumprir unicamente sua responsabilidade.
-
+**S - Single-responsiblity principle**: Toda vez que o desenvolvedor tiver quebrado algo em mais de uma classe você, quebrou apenas ela. Por exemplo, quando foi criada uma classe pra representar uma lista de componentes e uma classe pra representar um item da lista de componentes, caso o componente da lista seja quebrado, a lista de componentes não é influenciada pois cada classe teve um design com o objetivo de cumprir unicamente sua responsabilidade.
+- **O - Open-closed principle**: As classes mais abstratas do React e de suas bibliotecas são fechadas a modificação e abertas às extensões.
+- **L - Liskov substitution principle**: Criação de componentes herdando de React.Component.
+- **I - Interface segregation principle**: Diferentes rotas implementadas no frontend.
+- **D - Dependency Inversion Principle**: As classes mais concretas implementadas no projeto herdam de classes abstratas do React, no frontend, e do Flask, no backend.
 
 ## Aula 14
 
